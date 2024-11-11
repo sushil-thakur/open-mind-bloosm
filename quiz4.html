@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--DM SANS Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <!-- LATO Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="quiz.css">
+    <title>Mental Health Website</title>
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <section class="navigation">
+        <div class="logo-area">
+            <img id="logo" src="C:\Users\ACER\Desktop\IIMS\7th\Web\Website\Photos\logo.png" alt="">
+            <h1>Open Mind Blossoms</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="Quiz.html">Self-Assessment</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </div>
+    </section>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #e2dcdc;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #d68a36;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #d68a36;
+        }
+
+        .quiz-form {
+            background-color: #fff9f4;
+            padding: 20px;
+            border: 1px solid #e2dcdc;
+            border-radius: 8px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question p {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            padding: 8px 12px;
+            border: 1px solid #d68a36;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #d68a36;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .submit-btn:hover {
+            background-color: #b3712d;
+        }
+
+        .result-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #e2dcdc;
+            border-radius: 8px;
+            text-align: center;
+            display: none;
+        }
+
+        .result-section h3 {
+            font-size: 24px;
+            color: #d68a36;
+            margin-bottom: 15px;
+        }
+
+        .result-section p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    </style>
+<body>
+    <div class="container">
+        <h1>What’s My Love Language? | 5 Love Languages Quiz        </h1>
+        <p>
+            Love is a mysterious thing, isn’t it? Many would describe love as a “hit-and-miss” thing, but the truth is that there’s a mastery to love. I have a different definition of love, and you might have a different one. This definition can be your “language”; the language of love. Once you know how to read it, the slide of your relationship can go as smoothly as you can imagine.
+
+The concept of love languages was introduced by Gary Chapman in the book, “The Five Love Languages” and our love language quiz is inspired by the book. This unique love language quiz is designed to help you know your way of giving and receiving love among its five languages;
+<br>
+Acts of Service
+<br>
+
+Receiving Gifts
+<br>
+
+Quality Time
+<br>
+
+Words of Affirmation, and
+<br>
+
+Physical Touch
+<br>
+
+Knowing your love language can complement your relationships with your loved ones, as this unique language can give you insights into the various expressions of love that you resonate with the most!
+<br>
+
+So, don’t wait anymore. Grab a pen and notebook, track your answers, and find your love language today. This step of self-discovery will help you figure out your primary expression of love and connect with your loved ones on an emotional level.
+<br>
+<b>
+Please note that Calm Sage understands the importance of your privacy. Your responses are not shared with any third-party website, so rest assured that your information is safe with us.
+</b> <br>
+
+
+This quiz isn’t an official test and can only offer a simple understanding of your love language out of the five love languages as presented by Gary Chapman. If you need an in-depth understanding of your love languages, then it is suggested that you speak to a professional for more.
+<br>
+
+Are you ready to express yourself in the language that speaks to your heart?
+<br>
+
+Let’s begin!
+                    </p>
+        
+        
+
+
+            
+
+           <h2>What’s My Love Language?</h2>
+          <b><br> Important: It is advised that you don’t skip any of the questions in the test. Just choose the answer that applies to you and try to be as honest as you can for the best result! </p>
+          </b> 
+        <form class="quiz-form" id="quizForm">
+            <!-- Question 1 -->
+            <div class="question">
+                <div class="question">
+                    <p><strong>1. Choose a statement that applies to you the most…</strong></p>
+                    <label><input type="radio" name="q1" value="positive"> I feel loved when my S/O or friends spend one-on-one time with me</label><br>
+                    <label><input type="radio" name="q1" value="neutral"> I feel loved when my S/O helps me with chores</label><br>
+                    <label><input type="radio" name="q1" value="positive"> I feel loved when my S/O or friends give me a thoughtful gift</label><br>
+                    <label><input type="radio" name="q1" value="positive"> I feel loved when my S/O cuddles with me or hugs me after a long day</label><br>
+                    <label><input type="radio" name="q1" value="neutral"> I feel loved when my S/O or friends appreciate me, verbally</label>
+                </div>
+    
+                <div class="question">
+                    <p><strong>2. If you have to say “I love you” with song lyrics, which one would you pick?</strong></p>
+                    <label><input type="radio" name="q2" value="positive"> “I'm so in love with you. It just keeps getting better. I want to spend the rest of my life with you by my side.” - Lonestar</label><br>
+                    <label><input type="radio" name="q2" value="positive"> “I'll be there for you, these five words I swear to you. When you breathe, I want to be the air for you.” - Bon Jovi</label><br>
+                    <label><input type="radio" name="q2" value="positive"> “There's something about the way you look tonight. Takes my breath away, it's that feeling I get about you deep inside.” - Elton John</label><br>
+                    <label><input type="radio" name="q2" value="positive"> “Oh, my love, my darling, I've hungered for your touch.” - The Righteous Brothers</label><br>
+                    <label><input type="radio" name="q2" value="positive"> “When I see your face, there's not a thing that I would change, 'cause you're amazing just the way you are.” - Bruno Mars</label>
+                </div>
+    
+                <div class="question">
+                    <p><strong>3. Your S/O threw a surprise party, what’s the best part of your party?</strong></p>
+                    <label><input type="radio" name="q3" value="positive"> Having meaningful conversations and laughing together</label><br>
+                    <label><input type="radio" name="q3" value="positive"> The efforts to make the party fun and that I had a stress-free celebration</label><br>
+                    <label><input type="radio" name="q3" value="positive"> The thoughtful gifts I got from everyone who came</label><br>
+                    <label><input type="radio" name="q3" value="positive"> The hugs and kisses I got from my long-distance friends</label><br>
+                    <label><input type="radio" name="q3" value="positive"> The appreciation I got through heartfelt words and compliments from everyone</label>
+                </div>
+    
+                <div class="question">
+                    <p><strong>4. You’re taking a day off and spending the day with yourself. What are you doing?</strong></p>
+                    <label><input type="radio" name="q4" value="positive"> Self-reflecting with meditation or engaging in a hobby I love</label><br>
+                    <label><input type="radio" name="q4" value="neutral"> Organizing my space and getting the errands done</label><br>
+                    <label><input type="radio" name="q4" value="positive"> Treating myself with a dessert, a gift, or that perfume I’d been eying</label><br>
+                    <label><input type="radio" name="q4" value="positive"> Going to a spa, getting a massage, or going to a nail salon</label><br>
+                    <label><input type="radio" name="q4" value="positive"> Going on a shopping spree and lunch afterward</label>
+                </div>
+    
+                <div class="question">
+                    <p><strong>5. You’re on vacation with your family. What are you most likely to do?</strong></p>
+                    <label><input type="radio" name="q5" value="positive"> Playing games with the cousins I see once a year</label><br>
+                    <label><input type="radio" name="q5" value="positive"> Organizing fun outings for the family</label><br>
+                    <label><input type="radio" name="q5" value="positive"> Buying souvenirs for my friends and coworkers back home</label><br>
+                    <label><input type="radio" name="q5" value="neutral"> Taking care of the little ones in the family</label><br>
+                    <label><input type="radio" name="q5" value="positive"> Joining my siblings/cousins for a fun party</label>
+                </div>
+    
+                <div class="question">
+                    <p><strong>6. If you had to give yourself a tagline, what would it be?</strong></p>
+                    <label><input type="radio" name="q6" value="positive"> Creating memories, living life to the fullest</label><br>
+                    <label><input type="radio" name="q6" value="positive"> Changing the world, one act of kindness at a time</label><br>
+                    <label><input type="radio" name="q6" value="positive"> Embracing life’s little gifts</label><br>
+                    <label><input type="radio" name="q6" value="positive"> Strengthening bonds, one hug at a time</label><br>
+                    <label><input type="radio" name="q6" value="positive"> Inspiring, Motivating, and Spreading Positivity</label>
+                </div>
+    
+                <div class="question">
+                    <p><strong>7. You have a date tonight. What kind of date would you prefer?</strong></p>
+                    <label><input type="radio" name="q7" value="positive"> A dinner date where I can get to know my partner</label><br>
+                    <label><input type="radio" name="q7" value="positive"> Someplace we can volunteer for a cause</label><br>
+                    <label><input type="radio" name="q7" value="positive"> A surprise, but thoughtful night out</label><br>
+                    <label><input type="radio" name="q7" value="positive"> Getting a couples massage</label><br>
+                    <label><input type="radio" name="q7" value="positive"> A coffee date where we can have fun and talk casually</label>
+                </div>
+    
+                <div class="question">
+                    <p><strong>8. What’s the most meaningful gift you’ve ever received?</strong></p>
+                    <label><input type="radio" name="q8" value="positive"> A day of undivided attention from my S/O or friends</label><br>
+                    <label><input type="radio" name="q8" value="positive"> A relaxing day when I didn’t have to worry about anything</label><br>
+                    <label><input type="radio" name="q8" value="positive"> A surprisingly thoughtful and expensive gift</label><br>
+                    <label><input type="radio" name="q8" value="positive"> A fun day spent with my S/O lounging and relaxing</label><br>
+                    <label><input type="radio" name="q8" value="positive"> A thoughtfully penned letter</label>
+                </div>
+    
+                <div class="question">
+                    <p><strong>9. When you’re upset, how do you want to be cheered up?</strong></p>
+                    <label><input type="radio" name="q9" value="positive"> By receiving a compliment</label><br>
+                    <label><input type="radio" name="q9" value="neutral"> By having someone accompany you for lunch</label><br>
+                    <label><input type="radio" name="q9" value="neutral"> By someone bringing you a cup of coffee</label><br>
+                    <label><input type="radio" name="q9" value="positive"> By having someone hug or kiss you</label><br>
+                    <label><input type="radio" name="q9" value="positive"> By having someone praise you</label>
+                </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <p><strong>11. After an unbelievably rough day at work, what are you looking forward to?</strong></p>
+                <label><input type="radio" name="q11" value="neutral"> Catching up on your favorite variety show</label><br>
+                <label><input type="radio" name="q11" value="positive"> Reading a good book</label><br>
+                <label><input type="radio" name="q11" value="neutral"> Ordering food from your favorite takeout place</label><br>
+                <label><input type="radio" name="q11" value="positive"> Cuddling on the couch with your pet or S/O</label><br>
+                <label><input type="radio" name="q11" value="neutral"> Talking to a friend to vent out</label>
+            </div>
+            <!-- Continue adding more questions similarly -->
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Get Results</button>
+        </form>
+
+        <div id="result" class="result-section"></div>
+    </div>
+
+    <script>
+        document.getElementById("quizForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            calculateResult();
+        });
+
+        function calculateResult() {
+            const form = document.getElementById("quizForm");
+            let score = 0;
+
+            const answers = form.querySelectorAll('input[type="radio"]:checked');
+
+            answers.forEach(answer => {
+                if (answer.value === 'positive') {
+                    score += 2;
+                } else if (answer.value === 'neutral') {
+                    score += 1;
+                } else if (answer.value === 'negative') {
+                    score += 0;
+                }
+            });
+
+            const resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = generateResultMessage(score);
+            resultDiv.style.display = "block";
+        }
+
+        function generateResultMessage(score) {
+            let message = '';
+
+        
+            if (score >= 18) {
+                return "You are a highly affectionate person who thrives on love and connection!";
+            } else if (score >= 10) {
+                return "You appreciate love in various forms and value meaningful relationships.";
+            } else if (score >= 5) {
+                return "You enjoy love but may also value independence and personal space.";
+            } else {
+                return "You seem to be more reserved about expressing or receiving love.";
+            }
+        }
+          
+    </script>
+</body>
+</html>

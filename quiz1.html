@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--DM SANS Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <!-- LATO Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="quiz.css">
+    <title>Mental Health Website</title>
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <section class="navigation">
+        <div class="logo-area">
+            <img id="logo" src="C:\Users\ACER\Desktop\IIMS\7th\Web\Website\Photos\logo.png" alt="">
+            <h1>Open Mind Blossoms</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="Quiz.html">Self-Assessment</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </div>
+    </section>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;}
+        
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            border: 1px solid #e2dcdc;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #d68a36;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #d68a36;
+        }
+
+        .quiz-form {
+            background-color: #fff9f4;
+            padding: 20px;
+            border: 1px solid #e2dcdc;
+            border-radius: 8px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question p {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            padding: 8px 12px;
+            border: 1px solid #d68a36;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #d68a36;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .submit-btn:hover {
+            background-color: #b3712d;
+        }
+
+        .result-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #e2dcdc;
+            border-radius: 8px;
+            text-align: center;
+            display: none;
+        }
+
+        .result-section h3 {
+            font-size: 24px;
+            color: #d68a36;
+            margin-bottom: 15px;
+        }
+
+        .result-section p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    </style>
+<body>
+    <div class="container">
+        <h1>Are You Ready For a Relationship? | Fun & Free Quiz</h1>
+        <p>
+            Entering a new relationship is a big step that can add to your joy and commitment. At the same time, you need to have emotional maturity, self-awareness, and stability to thrive in a new relationship...
+        </p>
+        
+        <h2>Are You Ready For a Relationship?</h2>
+        <p>Please answer the following questions as truthfully as you can.</p>
+
+        <form class="quiz-form" id="quizForm">
+            <!-- Question 1 -->
+            <div class="question">
+                <p><strong>1. How do you feel about your current status?</strong></p>
+                <label><input type="radio" name="q1" value="positive"> Single, happy, and content</label>
+                <label><input type="radio" name="q1" value="neutral"> Single, but lonely</label>
+                <label><input type="radio" name="q1" value="negative"> Single, unhappy, and often lonely</label>
+                <label><input type="radio" name="q1" value="negative"> Not happy being single and want to change ASAP</label>
+            </div>
+
+            <!-- Continue with more questions -->
+
+            <!-- Question 2 -->
+            <div class="question">
+                <p><strong>2. How well do you know yourself and your needs?</strong></p>
+                <label><input type="radio" name="q2" value="positive"> Very well, I know what I want</label>
+                <label><input type="radio" name="q2" value="neutral"> I have some ideas, but not much</label>
+                <label><input type="radio" name="q2" value="negative"> I’m not that aware of my needs</label>
+                <label><input type="radio" name="q2" value="negative"> I have no idea what I want</label>
+            </div>
+             
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p><strong>3. Are you good at handling conflicts?</strong></p>
+                <label><input type="radio" name="q3" value="positive"> I can calmly handle and resolve conflicts</label>
+                <label><input type="radio" name="q3" value="neutral"> I try to avoid conflicts but handle them when they arise</label>
+                <label><input type="radio" name="q3" value="negative"> I feel stressed when conflicts arise, but I deal with them</label>
+                <label><input type="radio" name="q3" value="negative"> I avoid conflicts at all costs</label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <p><strong>4. How stable would you say your life is currently?</strong></p>
+                <label><input type="radio" name="q4" value="positive"> I have a stable and satisfying life</label>
+                <label><input type="radio" name="q4"value="neutral"> I have a mostly stable life with minor problems</label>
+                <label><input type="radio" name="q4" value="negative"> I have a somewhat stable but manageable life</label>
+                <label><input type="radio" name="q4" value="negative"> I have an unstable and stressful life</label>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <p><strong>5. How comfortable are you with being vulnerable with another person?</strong></p>
+                <label><input type="radio" name="q5" value="positive"> Very comfortable</label>
+                <label><input type="radio" name="q5" value="neutral"> Somewhat comfortable, I share my thoughts selectively</label>
+                <label><input type="radio" name="q5" value="negative"> I struggle with opening up about my thoughts and feelings</label>
+                <label><input type="radio" name="q5" value="negative"> I avoid being vulnerable with others</label>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <p><strong>6. How do you handle past relationship experiences?</strong></p>
+                <label><input type="radio" name="q6" value="positive"> I prefer to learn from them and move on</label>
+                <label><input type="radio" name="q6"value="neutral"> I reflect on them, but struggle to move on</label>
+                <label><input type="radio" name="q6" value="negative"> I learn from them, but I try to not dwell on the past</label>
+                <label><input type="radio" name="q6" value="negtive"> I avoid thinking about past relationships</label>
+            </div>
+            <!-- Question 7 -->
+            <div class="question">
+                <p><strong>7. What do you think about commitment?</strong></p>
+                <label><input type="radio" name="q7" value="positive"> I am ready for a serious commitment</label>
+                <label><input type="radio" name="q7" value="neutral"> I am curious about the commitment</label>
+                <label><input type="radio" name="q7" value="negative"> I am not sure about long-term commitment</label>
+                <label><input type="radio" name="q7"  value="negative"> I am not ready for a commitment</label>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <p><strong>8. What do you think about sharing your space and time with someone?</strong></p>
+                <label><input type="radio" name="q8"  value="positive"> I feel excited and comfortable</label>
+                <label><input type="radio" name="q8"  value="neutral"> I am open to it but still need my personal space</label>
+                <label><input type="radio" name="q8"  value="negative"> I feel apprehensive about it, but I’m willing to try</label>
+                <label><input type="radio" name="q8"  value="negative"> I feel uncomfortable and need my space</label>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <p><strong>9. What are your thoughts about compromise in a relationship?</strong></p>
+                <label><input type="radio" name="q9"  value="positive"> Compromise is important and should be mutual</label>
+                <label><input type="radio" name="q9"  value="neutral"> It’s important, but can be challenging as well</label>
+                <label><input type="radio" name="q9"  value="negative"> It’s necessary to compromise, but it’s hard for me</label>
+                <label><input type="radio" name="q9"  value="negative"> I struggle with the idea of compromise</label>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <p><strong>10. How much time do you think you can invest in a relationship?</strong></p>
+                <label><input type="radio" name="q10"  value="postive"> I’m ready to prioritize my relationship</label>
+                <label><input type="radio" name="q10"  value="neutral"> I’m OK with a good amount, but I need a balance</label>
+                <label><input type="radio" name="q10"  value="negative"> Little time, I have other commitments I need to see to</label>
+                <label><input type="radio" name="q10"  value="negative"> I am too busy, so very little time</label>
+            </div>
+
+
+
+            <!-- Continue adding more questions similarly -->
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Get Results</button>
+        </form>
+
+        <div id="result" class="result-section"></div>
+    </div>
+
+    <script>
+        document.getElementById("quizForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            calculateResult();
+        });
+
+        function calculateResult() {
+            const form = document.getElementById("quizForm");
+            let score = 0;
+
+            const answers = form.querySelectorAll('input[type="radio"]:checked');
+
+            answers.forEach(answer => {
+                if (answer.value === 'positive') {
+                    score += 2;
+                } else if (answer.value === 'neutral') {
+                    score += 1;
+                } else if (answer.value === 'negative') {
+                    score += 0;
+                }
+            });
+
+            const resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = generateResultMessage(score);
+            resultDiv.style.display = "block";
+        }
+
+        function generateResultMessage(score) {
+            let message = '';
+
+            if (score >= 16) {
+                message = "<h3>You're Ready for a Relationship!</h3><p>You are emotionally stable, self-aware, and ready to invest time and energy into a meaningful relationship.</p>";
+            } else if (score >= 10) {
+                message = "<h3>You're Almost Ready!</h3><p>You have a solid understanding of yourself and relationships, but there are areas that could use improvement before fully committing.</p>";
+            } else {
+                message = "<h3>You're Not Ready Yet</h3><p>It seems like there are important aspects of your life and emotional state to work on before jumping into a relationship.</p>";
+            }
+
+            return message;
+        }
+    </script>
+</body>
+</html>

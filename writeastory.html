@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--DM SANS Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <!-- LATO Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="writeastory.css">
+    <title>Mental Health Website</title>
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <section class="navigation">
+        <div class="logo-area">
+            <img id="logo" src="C:\Users\ACER\Desktop\IIMS\7th\Web\Website\Photos\logo.png" alt="">
+            <h1>Open Mind Blossoms</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="self.html">Self-Assessment</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </div>
+    </section>
+
+        
+    </nav>
+    <header class="hero">
+        <div class="overlay">
+            <h1>WRITE A STORY</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h2>Share Your Personal Stories of Triumph</h2>
+        <p>It is possible to overcome the mental health problems, all it takes is a little willpower and some help. Share your stories of recovery & inspire people in overcoming their struggles of various kinds.</p>
+        <form action="/submit-your-story" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name (required)</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email (required)</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+            </div>
+            <div class="form-group">
+                <label for="story">Share Story</label>
+                <textarea id="story" name="story"></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+
+    <script>
+        document.getElementById("storyForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from reloading the page
+
+            // Collect form data
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const subject = document.getElementById("subject").value;
+            const story = document.getElementById("story").value;
+
+            // Send email using EmailJS
+            emailjs.send("your_service_id", "your_template_id", {
+                from_name: name,
+                from_email: email,
+                subject: subject,
+                message: story,
+                to_email: "shresthasuprima55@gmail.com" // Add the target email here
+            }).then(function(response) {
+                alert("Your story has been submitted successfully!");
+            }, function(error) {
+                alert("Failed to send email. Please try again.");
+            });
+        });
+    </script>
+<br>
+
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-section">
+        <div class="logo-part">
+            <img id="footer-logo" src="C:\Users\ACER\Desktop\IIMS\7th\Web\Website\Photos\logo.png" alt=""><br>
+            <p>Open Mind Blossoms</p>
+        </div>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="self.html">Self-Assessment</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social-links">
+            <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="copyright">
+            <h3><i class="fa fa-copyright" aria-hidden="true" style="padding-right: 5px;"></i>2023 Open Mind Blossoms. All rights Reserved.</h3>
+        </div>
+    </div>   
+    
+</footer>
+
+<!-- Back to top button -->
+<button id="backToTopBtn" title="Go to top">↑</button>
+
+</body>
+</html>
+<!-- Link to js -->
+<script src="script.js"></script>

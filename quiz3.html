@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--DM SANS Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <!-- LATO Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="quiz.css">
+    <title>Mental Health Website</title>
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <section class="navigation">
+        <div class="logo-area">
+            <img id="logo" src="C:\Users\ACER\Desktop\IIMS\7th\Web\Website\Photos\logo.png" alt="">
+            <h1>Open Mind Blossoms</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="Quiz.html">Self-Assessment</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </div>
+    </section>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #e2dcdc;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #d68a36;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #d68a36;
+        }
+
+        .quiz-form {
+            background-color: #fff9f4;
+            padding: 20px;
+            border: 1px solid #e2dcdc;
+            border-radius: 8px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question p {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            padding: 8px 12px;
+            border: 1px solid #d68a36;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #d68a36;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .submit-btn:hover {
+            background-color: #b3712d;
+        }
+
+        .result-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #e2dcdc;
+            border-radius: 8px;
+            text-align: center;
+            display: none;
+        }
+
+        .result-section h3 {
+            font-size: 24px;
+            color: #d68a36;
+            margin-bottom: 15px;
+        }
+
+        .result-section p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    </style>
+<body>
+    <div class="container">
+        <h1>The ACE Quiz: Did You Experience Childhood Trauma?</h1>
+        <p>
+            Our childhood experiences shape who we are and who we become in the future. While some memories bring nothing but joy, others can be difficult to process and even traumatic. We’ve all experienced challenges growing up, but for some, these challenges can be overwhelming and leave lasting scars. 
+
+Childhood trauma refers to the experience of events that are frightening, dangerous, or violent, and that overwhelm a child’s ability to cope. These events can happen at any point during your childhood – from infancy to adolescence. 
+
+What kind of trauma you experience can define how your adult life will pan out. Some common kinds of childhood trauma you might experience can include; 
+<br>
+<br>
+<b>
+Physical, Sexual, Emotional
+<br>
+
+Household Dysfunction: Divorce, Separation, Domestic Violence, Substance Abuse, Mental Illness            <br>
+
+Trauma: Witnessing Violence, Accidents, or Death of a Loved One             <br>
+
+Neglect: Physical, Emotional, Mental            <br>
+</b>
+                    </p>
+        
+        <h2>What Is The ACE Quiz? 
+        </h2>
+        <p>The ACE quiz, or Adverse Childhood Experiences Quiz, is a tool used to assess how many childhood traumatic events you may have experienced (before age 18). These events can have a significant impact on your life and well-being. It is believed that the more your ACE score is, the more likely you are to have experienced childhood trauma. 
+            <br>
+
+            Please note that this quiz is NOT a diagnostic test, but a point for self-reflection. There is no right or wrong answer. Be honest with yourself. If the questionnaire brings up difficult memories, exit the quiz, and seek support. 
+            <br>
+            <br>
+
+
+            Calm Sage understands the importance of privacy. Your responses are not shared with any third-party website, so you can rest assured of your privacy. 
+            <br>
+            <br>
+
+
+            We also work diligently to provide you with instant results upon completing the test. The immediate result can help guide you to your next steps in seeking support and moving forward on the path of recovery.
+            <br>
+            <br>
+
+
+            
+
+           <b>Did You Experience Childhood Trauma? | Free ACE Test </b>
+           <br> Please try to answer each of the questions below as honestly as you can. We ask you to be honest to deliver an accurate result. </p>
+
+        <form class="quiz-form" id="quizForm">
+            <!-- Question 1 -->
+            <div class="question">
+                <p><strong>1. Did you ever experience physical violence from a parent or adult caregiver, such as hitting, kicking, or being slapped?</strong></p>
+                <label><input type="radio" name="q1" value="never"> Never</label>
+                <label><input type="radio" name="q1" value="rarely"> Rarely</label>
+                <label><input type="radio" name="q1" value="sometimes"> Sometimes</label>
+                <label><input type="radio" name="q1" value="often"> Often</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <p><strong>2. Did you experience any behaviors such as being insulted, sworn at, or belittled by a parent or caregiver?</strong></p>
+                <label><input type="radio" name="q2" value="never"> Never</label>
+                <label><input type="radio" name="q2" value="rarely"> Rarely</label>
+                <label><input type="radio" name="q2" value="sometimes"> Sometimes</label>
+                <label><input type="radio" name="q2" value="often"> Often</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p><strong>3. Have you ever felt a lack of love or support from a parent or caregiver? Did you ever feel like a burden as a child?</strong></p>
+                <label><input type="radio" name="q3" value="never"> Never</label>
+                <label><input type="radio" name="q3" value="rarely"> Rarely</label>
+                <label><input type="radio" name="q3" value="sometimes"> Occasionally</label>
+                <label><input type="radio" name="q3" value="often"> Frequently</label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <p><strong>4. Were your basic needs met such as having enough food, clean clothes, or a safe place to sleep as a child?</strong></p>
+                <label><input type="radio" name="q4" value="never"> Never</label>
+                <label><input type="radio" name="q4" value="rarely"> Rarely</label>
+                <label><input type="radio" name="q4" value="sometimes"> Occasionally</label>
+                <label><input type="radio" name="q4" value="often"> Frequently</label>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <p><strong>5.How often did you feel emotionally neglected by a parent or caregiver, like they didn’t listen to you or have time for you?</strong></p>
+                <label><input type="radio" name="q5" value="never"> Never</label>
+                <label><input type="radio" name="q5" value="rarely"> Rarely</label>
+                <label><input type="radio" name="q5" value="sometimes"> Occasionally</label>
+                <label><input type="radio" name="q5" value="often"> Frequently</label>
+            </div>
+            <!-- Question 6 -->
+            <div class="question">
+                <p><strong>6. Did you experience any of the following in your house before you turned 18: Divorce or separation of parents, or any other break-up of your guardians?</strong></p>
+                <label><input type="radio" name="q6" value="never"> Never</label>
+                <label><input type="radio" name="q6" value="rarely"> Briefly</label>
+                <label><input type="radio" name="q6" value="sometimes"> For some time </label>
+                <label><input type="radio" name="q6" value="often"> Most of the time</label>
+            </div>
+            <!-- Question 7 -->
+            <div class="question">
+                <p><strong>7.How often did you witness violence between your parents, adult siblings, or caregivers?</strong></p>
+                <label><input type="radio" name="q7" value="never"> Never</label>
+                <label><input type="radio" name="q7" value="rarely"> Once or twice  </label>
+                <label><input type="radio" name="q7" value="sometimes"> A few times </label>
+                <label><input type="radio" name="q7" value="often"> Many times</label>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <p><strong>8. Did a parent or caregiver in your childhood ever struggle with a substance abuse disorder or an addiction to alcohol or drugs?</strong></p>
+                <label><input type="radio" name="q8" value="never"> Never</label>
+                <label><input type="radio" name="q8" value="rarely"> Briefly</label>
+                <label><input type="radio" name="q8" value="sometimes"> For some time </label>
+                <label><input type="radio" name="q8" value="often"> Most of the time</label>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <p><strong>9. Was a parent, adult sibling, or caregiver in your childhood diagnosed with a mental health disorder or illness?</strong></p>
+                <label><input type="radio" name="q9" value="never"> Never</label>
+                <label><input type="radio" name="q9" value="rarely"> Briefly</label>
+                <label><input type="radio" name="q9" value="sometimes"> For some time </label>
+                <label><input type="radio" name="q9" value="often"> Most of the time</label>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <p><strong>10. Was a parent or caregiver in your childhood ever involved in unlawful activities or went to prison?
+                </strong></p>
+                <label><input type="radio" name="q10" value="never"> Never</label>
+                <label><input type="radio" name="q10" value="rarely"> Briefly</label>
+                <label><input type="radio" name="q10" value="sometimes"> For some time </label>
+                <label><input type="radio" name="q10" value="often"> Most of the time</label>
+            <!-- Continue adding more questions similarly -->
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Get Results</button>
+        </form>
+
+        <div id="result" class="result-section"></div>
+    </div>
+
+    <script>
+        document.getElementById("quizForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            calculateResult();
+        });
+
+        function calculateResult() {
+            const form = document.getElementById("quizForm");
+            let score = 0;
+
+            const answers = form.querySelectorAll('input[type="radio"]:checked');
+
+            answers.forEach(answer => {
+                // New scoring based on your revised questions
+                if (answer.value === 'never') {
+                    score += 0;
+                } else if (answer.value === 'rarely' || answer.value === 'briefly') {
+                    score += 1;
+                } else if (answer.value === 'sometimes' || answer.value === 'for some time') {
+                    score += 2;
+                } else if (answer.value === 'often' || answer.value === 'most of the time') {
+                    score += 3;
+                }
+            });
+        
+
+            const resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = generateResultMessage(score);
+            resultDiv.style.display = "block";
+        }
+
+        function generateResultMessage(score) {
+            let message = '';
+        
+         
+            
+                if (score === 0) {
+                    message = "You scored 0. It seems that you have not experienced any significant childhood trauma. That's a positive outcome! Continue nurturing your mental well-being.";
+                } else if (score > 0 && score <= 5) {
+                    message = "You scored between 1 and 5. While you may have experienced some challenges during your childhood, it seems you have had a relatively stable environment. Consider reflecting on any lingering feelings or experiences.";
+                } else if (score > 5 && score <= 10) {
+                    message = "You scored between 6 and 10. It's likely that you have faced some challenges in your childhood that could have lasting effects. It might be helpful to explore these experiences further and seek support if needed.";
+                } else if (score > 10) {
+                    message = "You scored above 10. This indicates that you may have experienced significant childhood trauma. It's important to acknowledge these experiences and consider seeking support from a mental health professional.";
+                }
+
+            return message;
+        }
+    </script>
+</body>
+</html>
